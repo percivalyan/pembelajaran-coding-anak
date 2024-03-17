@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Menghilangkan gulir horizontal */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Untuk browser Firefox */
+html {
+  scrollbar-width: none;
+}

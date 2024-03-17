@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Pemrograman 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-image: url("https://img.freepik.com/free-vector/cloud-background-pastel-paper-cut-style-vector_53876-135914.jpg?w=826&t=st=1710695590~exp=1710696190~hmac=a44519199fd852faefdae5b77f2bf349caead50d75f1debbba9d37a05c940c3e");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .title-top {
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh; /* Menggunakan viewport height agar kontainer memenuhi tinggi layar */
+        }
+
+        .title {
+          text-align: center;
+        }
+      }
+      /* Styling untuk card */
+      .card {
+        width: 600px; /* Sesuaikan lebar sesuai kebutuhan */
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px auto; /* Pusatkan card */
+        text-align: center;
+      }
+
+      @media screen and (min-width: 900px) {
+        .card {
+          width: 900px;
+        }
+      }
+
+      .card img {
+        width: 100%; /* Untuk memastikan gambar diisi seluruh width card */
+        border-radius: 10px;
+      }
+
+      .card h2 {
+        color: #333;
+      }
+
+      .card p {
+        color: #666;
+        margin-top: 10px;
+      }
+
+      .btn {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      /* Styling untuk navigasi bar di dalam card */
+      .navbar .card-nav {
+        background-color: #72c1f5;
+      }
+
+      .card-nav {
+        overflow: hidden;
+        border-radius: 10px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center; /* untuk membuat tulisan ditengah */
+      }
+
+      .card-nav a {
+        float: left;
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 0 10px; /* margin antara setiap link */
+        text-decoration: none;
+        color: black; /* warna teks */
+        font-weight: bold; /* tebal teks */
+      }
+
+      .card-nav a:hover {
+        background-color: #dcfffd;
+        color: #333;
+      }
+
+      /* Styling untuk konten */
+      .content {
+        display: none;
+        /* background-color: #b9e5ff;  */
+        /* Sesuaikan dengan warna card */
+        background-image: url("https://img.freepik.com/free-vector/flat-design-baby-shower-zoom-background_23-2149242844.jpg?w=900&t=st=1710695944~exp=1710696544~hmac=be922c79502bd11804b186317a30d0e2dc431845b635028da7863e24ed826f1df");
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      pre {
+        max-width: 100%; /* Menetapkan lebar maksimum */
+        overflow-x: auto; /* Memberikan overflow horizontal */
+        white-space: pre-wrap; /* Memastikan teks tetap terbaca dengan baik */
+        word-wrap: break-word; /* Memastikan teks terpotong dengan benar saat diperlukan */
+      }
+
+      .profile .container {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.5
+        ); /* Atur opacity background */
+        padding: 20px;
+      }
+
+      .profile .profile-card .card-nav a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        margin-right: 10px; /* Mengatur jarak antara link */
+      }
+
+      .card-nav {
+        display: inline-block; /* Membuat SVG dan teks berdampingan */
+        vertical-align: middle; /* Untuk menengahkan SVG */
+        margin-right: 10px; /* Atur jarak antara SVG dan teks */
+      }
+
+      .card-nav svg {
+        width: 250px; /* Atur ukuran SVG sesuai kebutuhan */
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar"></div>
+    </div>
+    <!-- Card besar -->
+    <div class="container title-top">
+      <div class="title">
+        <a href="image/title-1.png">
+          <img
+            src="image/title-1.png"
+            alt="Belajar Pemrograman untuk Anak-anak" />
+        </a>
+      </div>
+    </div>
+    <div class="card navbar" id="navbar">
+      <!-- Navigasi bar di dalam card -->
+      <div class="card-nav">
+        <a href="#home">Beranda</a>
+        <a href="#profil">Video</a>
+        <a href="#about">Tentang Kita</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+
+      <!-- Konten card -->
+      <div id="home" class="content">
+        <h2>Home</h2>
+        <hr width="100%" color="black" />
+        <h3>Nama Anggota Kelompok Tiga</h3>
+        <!-- Isi halaman Home -->
+        <ul style="text-align: left">
+          <li>AHMAD FAUZAN</li>
+          <li>ARIES ARDYAKSA</li>
+          <li>BAGUS FIRMANSYAH</li>
+          <li>DAFFA AL FARREL GHAZALI</li>
+          <li>RYANDA DEANOVA</li>
+          <li>YUDHA YUDHISTIRA</li>
+        </ul>
+      </div>
+
+      <div id="profil" class="content">
+        <h2>Profil</h2>
+        <hr width="100%" color="black" />
+        <div class="container">
+          <div class="card-nav">
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a9 9 0 0 0 5-1.5 4 4 0 0 0-4-3.5h-2a4 4 0 0 0-4 3.5 9 9 0 0 0 5 1.5Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </div>
+          <h4>Perkenalkan kami dari Kelompok Tiga, ini adalah web kami.</h4>
+        </div>
+        <!-- Isi halaman Profil -->
+      </div>
+
+      <div id="about" class="content">
+        <h2>About</h2>
+        <hr width="100%" color="black" />
+        <div class="container">
+          <div class="card-nav">
+            =<svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 19V4c0-.6.4-1 1-1h12c.6 0 1 .4 1 1v13H7a2 2 0 0 0-2 2Zm0 0c0 1.1.9 2 2 2h12M9 3v14m7 0v4" />
+            </svg>
+          </div>
+          <h4>
+            Website ini dibuat dengan mengintegrasikan Spring sebagai Back End
+            dan Native HTML CSS JS sebagai Front End.
+          </h4>
+          <div class="container" style="text-align: center">
+            <h4 style="margin-top: -12px; margin-bottom: -12px">
+              Mulai Belajar <br />&#9660; &#9660; &#9660;
+            </h4>
+            <div class="card-nav profile-card">
+              <a href="#WebsiteAdalah">Pengertian Website</a>
+              <a href="#htmlDasar">HTML Dasar</a>
+            </div>
+          </div>
+        </div>
+        <!-- Isi halaman About -->
+      </div>
+
+      <div id="gallery" class="content">
+        <h2>Gallery</h2>
+        <hr width="100%" color="black" />
+        <!-- Isi halaman Gallery -->
+      </div>
+
+      <div id="kontak" class="content">
+        <h2>Kontak</h2>
+        <hr width="100%" color="black" />
+        <div class="container">
+          <div class="card-nav">
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a9 9 0 0 0 5-1.5 4 4 0 0 0-4-3.5h-2a4 4 0 0 0-4 3.5 9 9 0 0 0 5 1.5Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </div>
+          <pre
+            style="
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 17px;
+            ">
+Hubungi saya melalui Direct Message di Instagram.
+Jika butuh source code dapat mengakses GitHub saya.
+Terima kasih sudah berkunjung.
+          </pre>
+          <div class="container" style="text-align: center">
+            <h4 style="margin-top: -12px; margin-bottom: -12px">
+              Temukan Saya <br />&#9660; &#9660; &#9660;
+            </h4>
+            <div class="card-nav profile-card">
+              <a href="#">Instagram</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Isi halaman Kontak -->
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script>
+      document.getElementById("home").style.display = "block";
+
+      const links = document.querySelectorAll(".card-nav a");
+
+      links.forEach(link => {
+        link.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+          const contents = document.querySelectorAll(".content");
+          contents.forEach(content => {
+            content.style.display = "none";
+          });
+          document.querySelector(targetId).style.display = "block";
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
