@@ -5,152 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tugas Pemrograman 2</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        background-image: url("https://img.freepik.com/free-vector/cloud-background-pastel-paper-cut-style-vector_53876-135914.jpg?w=826&t=st=1710695590~exp=1710696190~hmac=a44519199fd852faefdae5b77f2bf349caead50d75f1debbba9d37a05c940c3e");
-        background-size: cover;
-        background-repeat: no-repeat;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-
-      .title-top {
-        .container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh; /* Menggunakan viewport height agar kontainer memenuhi tinggi layar */
-        }
-
-        .title {
-          text-align: center;
-        }
-      }
-      /* Styling untuk card */
-      .card {
-        width: 600px; /* Sesuaikan lebar sesuai kebutuhan */
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        margin: 20px auto; /* Pusatkan card */
-        text-align: center;
-      }
-
-      @media screen and (min-width: 900px) {
-        .card {
-          width: 900px;
-        }
-      }
-
-      .card img {
-        width: 100%; /* Untuk memastikan gambar diisi seluruh width card */
-        border-radius: 10px;
-      }
-
-      .card h2 {
-        color: #333;
-      }
-
-      .card p {
-        color: #666;
-        margin-top: 10px;
-      }
-
-      .btn {
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      .btn:hover {
-        background-color: #0056b3;
-      }
-
-      /* Styling untuk navigasi bar di dalam card */
-      .navbar .card-nav {
-        background-color: #72c1f5;
-      }
-
-      .card-nav {
-        overflow: hidden;
-        border-radius: 10px;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center; /* untuk membuat tulisan ditengah */
-      }
-
-      .card-nav a {
-        float: left;
-        display: block;
-        color: #fff;
-        text-align: center;
-        padding: 10px 20px;
-        text-decoration: none;
-        margin: 0 10px; /* margin antara setiap link */
-        text-decoration: none;
-        color: black; /* warna teks */
-        font-weight: bold; /* tebal teks */
-      }
-
-      .card-nav a:hover {
-        background-color: #dcfffd;
-        color: #333;
-      }
-
-      /* Styling untuk konten */
-      .content {
-        display: none;
-        /* background-color: #b9e5ff;  */
-        /* Sesuaikan dengan warna card */
-        background-image: url("https://img.freepik.com/free-vector/flat-design-baby-shower-zoom-background_23-2149242844.jpg?w=900&t=st=1710695944~exp=1710696544~hmac=be922c79502bd11804b186317a30d0e2dc431845b635028da7863e24ed826f1df");
-        border-radius: 10px;
-        padding: 20px;
-        margin-top: 20px;
-      }
-      pre {
-        max-width: 100%; /* Menetapkan lebar maksimum */
-        overflow-x: auto; /* Memberikan overflow horizontal */
-        white-space: pre-wrap; /* Memastikan teks tetap terbaca dengan baik */
-        word-wrap: break-word; /* Memastikan teks terpotong dengan benar saat diperlukan */
-      }
-
-      .profile .container {
-        background-color: rgba(
-          255,
-          255,
-          255,
-          0.5
-        ); /* Atur opacity background */
-        padding: 20px;
-      }
-
-      .profile .profile-card .card-nav a {
-        display: inline-block;
-        text-decoration: none;
-        padding: 10px 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f0f0f0;
-        margin-right: 10px; /* Mengatur jarak antara link */
-      }
-
-      .card-nav {
-        display: inline-block; /* Membuat SVG dan teks berdampingan */
-        vertical-align: middle; /* Untuk menengahkan SVG */
-        margin-right: 10px; /* Atur jarak antara SVG dan teks */
-      }
-
-      .card-nav svg {
-        width: 250px; /* Atur ukuran SVG sesuai kebutuhan */
-        height: 250px;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -166,86 +20,120 @@
         </a>
       </div>
     </div>
+
     <div class="card navbar" id="navbar">
       <!-- Navigasi bar di dalam card -->
       <div class="card-nav">
         <a href="#home">Beranda</a>
-        <a href="#profil">Video</a>
-        <a href="#about">Tentang Kita</a>
         <a href="#gallery">Gallery</a>
-        <a href="#kontak">Kontak</a>
+        <a href="#belajar">Materi</a>
+        <a href="#video">Video</a>
+        <a href="#audio">Audio</a>
+        <!-- <a href="#kontak">Kontak</a> -->
       </div>
 
       <!-- Konten card -->
       <div id="home" class="content">
-        <h2>Home</h2>
-        <hr width="100%" color="black" />
-        <h3>Nama Anggota Kelompok Tiga</h3>
-        <!-- Isi halaman Home -->
-        <ul style="text-align: left">
-          <li>AHMAD FAUZAN</li>
-          <li>ARIES ARDYAKSA</li>
-          <li>BAGUS FIRMANSYAH</li>
-          <li>DAFFA AL FARREL GHAZALI</li>
-          <li>RYANDA DEANOVA</li>
-          <li>YUDHA YUDHISTIRA</li>
-        </ul>
-      </div>
-
-      <div id="profil" class="content">
-        <h2>Profil</h2>
+        <h2>Beranda</h2>
         <hr width="100%" color="black" />
         <div class="container">
-          <div class="card-nav">
-            <svg
-              class="w-6 h-6 text-gray-800 dark:text-white"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24">
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a9 9 0 0 0 5-1.5 4 4 0 0 0-4-3.5h-2a4 4 0 0 0-4 3.5 9 9 0 0 0 5 1.5Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-            </svg>
+          <h3>Selamat Datang Sobat Coding</h3>
+          <p style="color: black">
+            Selamat datang di platform pembelajaran pemrograman untuk anak!
+          </p>
+          <p style="color: black">
+            Kami hadir untuk membawa dunia coding menjadi lebih dekat kepada
+            anak-anak dengan cara yang menyenangkan dan interaktif. Di sini,
+            anak-anak dapat belajar berbagai bahasa pemrograman seperti Python,
+            Scratch, dan banyak lagi, melalui beragam modul dan proyek yang
+            menarik.
+          </p>
+
+          <p style="color: black">
+            Tingkatkan kreativitas, logika, dan pemikiran komputasional
+            anak-anak dengan menjelajahi konten-konten seru yang kami sediakan.
+          </p>
+
+          <p style="color: black">
+            Ayo mulai petualangan baru dalam dunia coding bersama kami!
+          </p>
+
+          <div class="container" style="text-align: center; margin-top: 40px">
+            <h4 style="margin-top: -12px; margin-bottom: -12px">
+              Ayo Mulai Belajar<br />&#9660; &#9660; &#9660;
+            </h4>
+            <div class="card-nav profile-card">
+              <a href="materi.html">Mulai Belajar</a>
+            </div>
           </div>
-          <h4>Perkenalkan kami dari Kelompok Tiga, ini adalah web kami.</h4>
         </div>
         <!-- Isi halaman Profil -->
       </div>
 
-      <div id="about" class="content">
-        <h2>About</h2>
+      <div id="video" class="content">
+        <h2>Video Pembelajaran</h2>
+        <hr width="100%" color="black" />
+        <div class="container">
+          <div class="card-nav"></div>
+          <h4>Tonton video menarik ini untuk mengetahui apa itu Coding.</h4>
+          <h4>Ternyata ngoding itu asyik lho.</h4>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_dwX40EJQ3s"
+            frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+        <!-- Isi halaman Profil -->
+      </div>
+
+      <div id="audio" class="content">
+        <h2>Audio Background</h2>
         <hr width="100%" color="black" />
         <div class="container">
           <div class="card-nav">
-            =<svg
-              class="w-6 h-6 text-gray-800 dark:text-white"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24">
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 19V4c0-.6.4-1 1-1h12c.6 0 1 .4 1 1v13H7a2 2 0 0 0-2 2Zm0 0c0 1.1.9 2 2 2h12M9 3v14m7 0v4" />
-            </svg>
+            <!-- Optional: Icon or any other elements -->
           </div>
+          <h4>New Start by PIKASONIC</h4>
+          <!-- Audio Player -->
+          <iframe
+            width="100%"
+            height="166"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/pika5onic/new-start&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+          </iframe>
+        </div>
+        <!-- Isi halaman Profil -->
+      </div>
+
+      <div id="belajar" class="content">
+        <h2>Ayo Mulai Belajar</h2>
+        <hr width="100%" color="black" />
+        <div class="container">
+          <div class="card-nav" id="img-belajar">
+            <img
+              src="https://img.freepik.com/free-vector/stay-home-talk-your-friends-online_23-2148485083.jpg?w=740&t=st=1710782942~exp=1710783542~hmac=0b94c30a4f7542167014dea054c96cc676cb239992aca26de1c7f09da5cedff3"
+              alt="Stay Home Talk Your Friends Online" />
+          </div>
+          <p style="font-size: 12px; color: #777; text-align: center">
+            Photos provided by
+            <a
+              href="https://www.freepik.com/free-vector/stay-home-talk-your-friends-online_7350424.htm#fromView=search&page=1&position=0&uuid=256b31f8-a037-4bcc-9a70-4dd624f52f71"
+              >Freepik</a
+            >
+          </p>
           <h4>
-            Website ini dibuat dengan mengintegrasikan Spring sebagai Back End
-            dan Native HTML CSS JS sebagai Front End.
+            Ayo belajar dengan menekan "Mulai Belajar" dan dapatkan berbagai
+            materi menarik.
           </h4>
           <div class="container" style="text-align: center">
             <h4 style="margin-top: -12px; margin-bottom: -12px">
-              Mulai Belajar <br />&#9660; &#9660; &#9660;
+              Ayo Mulai Belajar <br />&#9660; &#9660; &#9660;
             </h4>
             <div class="card-nav profile-card">
-              <a href="#WebsiteAdalah">Pengertian Website</a>
-              <a href="#htmlDasar">HTML Dasar</a>
+              <a href="materi.html">Mulai Belajar</a>
             </div>
           </div>
         </div>
@@ -256,6 +144,65 @@
         <h2>Gallery</h2>
         <hr width="100%" color="black" />
         <!-- Isi halaman Gallery -->
+        <div class="container">
+          <div class="card-nav" id="gambar-grid">
+            <!-- Place your images here -->
+            <img
+              src="image/annie-spratt-CV3nkG7XIwg-unsplash.jpg"
+              alt="Image 1" />
+            <img
+              src="image/annie-spratt-xKJUnFwfz3s-unsplash.jpg"
+              alt="Image 2" />
+            <img
+              src="image/compare-fibre-JiOFFI3W7IA-unsplash.jpg"
+              alt="Image 3" />
+            <img
+              src="image/compare-fibre-Y8TiLvKnLeg-unsplash.jpg"
+              alt="Image 4" />
+          </div>
+          <p style="font-size: 12px; color: #777; text-align: center">
+            Photo by
+            <a
+              href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Annie Spratt</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/woman-in-black-long-sleeve-shirt-using-macbook-air-on-brown-wooden-table-CV3nkG7XIwg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            >
+            | Photo by
+            <a
+              href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Annie Spratt</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/woman-in-black-jacket-using-macbook-pro-xKJUnFwfz3s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            >
+            | Photo by
+            <a
+              href="https://unsplash.com/@comparefibre?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Compare Fibre</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/person-in-red-shirt-wearing-black-and-gray-headphones-Y8TiLvKnLeg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            >
+            | Photo by
+            <a
+              href="https://unsplash.com/@comparefibre?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Compare Fibre</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/boy-in-red-hoodie-wearing-black-headphones-JiOFFI3W7IA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            >
+          </p>
+        </div>
       </div>
 
       <div id="kontak" class="content">
@@ -292,7 +239,7 @@ Terima kasih sudah berkunjung.
             </h4>
             <div class="card-nav profile-card">
               <a href="#">Instagram</a>
-              <a href="#">GitHub</a>
+              <a href="https://github.com/percivalyan">GitHub</a>
             </div>
           </div>
         </div>

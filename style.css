@@ -12,3 +12,157 @@ body {
 html {
   scrollbar-width: none;
 }
+
+body {
+  background-image: url("https://img.freepik.com/free-vector/cloud-background-pastel-paper-cut-style-vector_53876-135914.jpg?w=826&t=st=1710695590~exp=1710696190~hmac=a44519199fd852faefdae5b77f2bf349caead50d75f1debbba9d37a05c940c3e");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.title-top {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Menggunakan viewport height agar kontainer memenuhi tinggi layar */
+  }
+
+  .title {
+    text-align: center;
+  }
+}
+/* Styling untuk card */
+.card {
+  width: 600px; /* Sesuaikan lebar sesuai kebutuhan */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto; /* Pusatkan card */
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    width: 900px;
+  }
+}
+
+.card img {
+  width: 100%; /* Untuk memastikan gambar diisi seluruh width card */
+  border-radius: 10px;
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styling untuk navigasi bar di dalam card */
+.navbar .card-nav {
+  background-color: #72c1f5;
+}
+
+.card-nav {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* untuk membuat tulisan ditengah */
+}
+
+.card-nav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 0 10px; /* margin antara setiap link */
+  text-decoration: none;
+  color: black; /* warna teks */
+  font-weight: bold; /* tebal teks */
+}
+
+.card-nav a:hover {
+  background-color: #dcfffd;
+  color: #333;
+}
+
+/* Styling untuk konten */
+.content {
+  display: none;
+  /* background-color: #b9e5ff;  */
+  /* Sesuaikan dengan warna card */
+  background-image: url("https://img.freepik.com/free-vector/flat-design-baby-shower-zoom-background_23-2149242844.jpg?w=900&t=st=1710695944~exp=1710696544~hmac=be922c79502bd11804b186317a30d0e2dc431845b635028da7863e24ed826f1df");
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+pre {
+  max-width: 100%; /* Menetapkan lebar maksimum */
+  overflow-x: auto; /* Memberikan overflow horizontal */
+  white-space: pre-wrap; /* Memastikan teks tetap terbaca dengan baik */
+  word-wrap: break-word; /* Memastikan teks terpotong dengan benar saat diperlukan */
+}
+
+.profile .container {
+  background-color: rgba(255, 255, 255, 0.5); /* Atur opacity background */
+  padding: 20px;
+}
+
+.profile .profile-card .card-nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  margin-right: 10px; /* Mengatur jarak antara link */
+}
+
+.card-nav {
+  display: inline-block; /* Membuat SVG dan teks berdampingan */
+  vertical-align: middle; /* Untuk menengahkan SVG */
+  margin-right: 10px; /* Atur jarak antara SVG dan teks */
+}
+
+.card-nav svg {
+  width: 250px; /* Atur ukuran SVG sesuai kebutuhan */
+  height: 250px;
+}
+
+#gambar-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+#gambar-grid img {
+  width: calc(50% - 10px); /* 50% lebar gambar - sedikit ruang kosong */
+  margin: 5px; /* Ruang kosong di antara gambar */
+}
+#img-belajar img {
+  border: 2px solid black; /* Atur border dan warna sesuai kebutuhan */
+  max-width: 300px; /* Atur lebar maksimum gambar */
+  height: auto; /* Agar tinggi gambar menyesuaikan proporsi */
+}
